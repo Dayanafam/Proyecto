@@ -1,0 +1,477 @@
+
+
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family:"Roboto",sans-serif;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--black);
+    background-color:white;
+}
+
+h2,
+h3,
+h4{
+    font-weight: 400;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+a{
+    text-decoration: none;
+}
+ul,
+li{
+    list-style: none;
+}
+.container{
+    max-width: 114rem;
+    margin: 0 auto;
+    padding: 0 1.6rem;
+}
+@media only screen and (max-width: 1200px){
+    .container{
+        padding: 0 3rem;
+    }
+}
+@media only screen and (max-width: 768px){
+    .container{
+        padding: 0 5rem;
+    }
+}
+
+/* NAVIGATION */
+.navbar-brand{
+    font-size: 4rem;
+}
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 0;
+    line-height: 1rem;
+    background-color: var(--black);
+}
+.nav__center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.nav__logo{
+    font-size: 2rem;
+    color: var(--white);
+}
+.nav__logo span{
+    color: var(--amarillo);
+}
+.nav__list{
+    display: flex;
+    align-items: center;
+}
+.nav__list span{
+    display: inline-block;
+    font-size: 3.5rem;
+    margin-top: .2rem;
+    margin-right: 2rem;
+    color: rgba(219, 216, 39, 0.541);
+}
+.carrito__icon{
+    position: relative;
+    cursor: pointer;
+}
+.carrito__icon i{
+    margin-top: .6rem;
+    font-size: 3.5rem;
+    color: var(--amarillo);
+}
+.carrito__icon span{
+    position: absolute;
+    top: -.4rem;
+    right: -3.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--rojo);
+    color: var(--white);
+    padding: .5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 50%;
+}
+
+
+/*NOSOTROS*/
+
+.about .row{
+    display: flex;
+    align-items: center;
+    gap:2rem;
+    flex-wrap: wrap;
+    padding:2rem 0;
+    padding-bottom: 3rem;
+}
+
+.about .row .video-container{
+    flex:1 1 40rem;
+    position: relative;
+}
+
+.about .row .video-container video{
+    width:100%;
+    border:1.5rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    height: 100%;
+    object-fit: cover;
+}
+
+.about .row .video-container h3{
+    position: absolute;
+    top:50%; transform: translateY(-50%);
+    font-size: 3rem;
+    background:#fff;
+    width:100%;
+    padding:1rem 2rem;
+    text-align: center;
+    mix-blend-mode: screen;
+}
+
+.about .row .content{
+    flex:1 1 40rem;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color:#333;
+}
+
+.about .row .content p{
+    font-size: 1.5rem;
+    color:#999;
+    padding:.5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+/*NOSOTROS*/
+
+/* PRODUCTOS */
+.rating span{
+    font-size: 2rem;
+    color: var(--amarillo);
+}
+.productos{
+    padding: 5rem 0;
+}
+.productos__center{
+    padding: 0 3rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 3rem 1rem;
+}
+.producto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .2);
+}
+.image__container img{
+    width: 310px;
+}
+.productos__footer{
+    padding: 1rem;
+    width: 100%;
+}
+.productos__footer h1{
+    height: 28px;
+    overflow: hidden;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.rating{
+    margin: 1rem 0;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+.btn{
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 1rem 1.8rem;
+    color: var(--black);
+    font-weight: 500;
+    font-size: 1.7rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+.btn:hover{
+    background-color: var(--azul);
+    color: var(--white);
+    border: 1px solid var(--azul);
+}
+.price{
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+
+/* CARRITO*/
+.carrito__overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 300ms ease-in-out;
+    background-color: rgba(0, 0, 0, .7);
+     visibility: hidden;
+    z-index: 2;
+}
+.carrito{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(.5);
+    width: 60%;
+    height: 80%;
+    padding: 1.6rem;
+    border-radius: 2rem;
+    overflow-x: scroll;
+    background-color: #f2f2f2;
+     opacity: 0; 
+     visibility: hidden; 
+    transform: all 300ms ease-in-out;
+}
+.carrito.show{
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    visibility: visible;
+}
+.carrito__overlay.show{
+    visibility: visible;
+}
+.carrito .close__carrito{
+    font-size: 4.5rem;
+    cursor: pointer;
+    color: var(--black);
+    transform: all 300ms ease-in-out;
+}
+.carrito .close__carrito:hover{
+    color: var(--rojo);
+}
+.carrito__item span{
+    font-size: 2rem;
+    color: rgb(88, 86, 86);
+}
+.carrito h1{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.carrito__item{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    width: 70%;
+    margin: 2rem auto;
+}
+.carrito__item div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.carrito__item div span{
+    cursor: pointer;
+}
+.carrito__item img{
+    width: 9rem;
+}
+.carrito__iem h3{
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+.carrito__item .price{
+    color: var(--azul);
+    font-weight: 700;
+}
+.carrito__item .remove__item{
+    cursor: pointer;
+    color: var(--rojo);
+    font-size: 4rem;
+}
+.carrito__footer{
+    text-align: center;
+    margin: 3rem;
+}
+.carrito__footer .btn{
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    background-color: rgb(238, 121, 121);
+    border: none;
+    margin-top: 2rem;
+}
+.carrito__footer .btn:focus{
+    outline: none;
+}
+@media only screen and (max-width: 1350px){
+    .carrito__item{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 700px){
+    .carrito{
+        width: 100%;
+        height: 100%;
+        border-radius: 0rem;
+    }
+    .carrito__item h3{
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+    .btn{
+        padding: .8rem 1.5rem;
+        font-size: 1.6rem;
+    }
+}
+/* CARRITO*/
+
+/* PRODUCTOS DETALLES */
+.detalles{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 15rem;
+}
+.detalle-grid{
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 3rem;
+}
+.detalles .img-fluid{
+    max-width: 380px;
+    width: 100%;
+    margin: 5rem auto;
+    box-shadow: 0 5px 10px 1px rgba(0, 0, 0, .2);
+} 
+.detalles-content{
+    padding: 2rem;
+}
+.detalles-content h3{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.detalles-content .precio span{
+    color: var(--azul);
+    font-size: 2rem;
+    font-weight: 600;
+}
+.detalles-content .description{
+    padding-top: 2rem;
+}
+.detalles-content .description span{
+    line-height: 2.8rem;
+}
+@media only screen and (max-width: 840px){
+    .detalle-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color:#333;
+    padding:1rem;
+    margin:2rem 0;
+    background:rgba(255, 51, 153,.05);
+}
+
+.heading span{
+    color:var(--pink);
+}
+/*PRODUCTOS DETALLES*/
+
+/*CONTACTANOS*/
+.contact{
+    align-items: center;
+}
+
+.contact .row{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap:1.5rem;
+    align-items: center;
+}
+
+.contact .row form{
+    flex:1 1 40rem;
+    padding:2rem 2.5rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border:.1rem solid rgba(0,0,0,.1);
+    background: #fff;
+    border-radius: .5rem;
+    align-items: center;
+}
+
+.contact .row .image{
+    flex:1 1 40rem;
+}
+
+.contact .row .image img{
+    width: 100%;
+}
+
+.contact .row form .box{
+    padding:1rem;
+    font-size: 1.7rem;
+    color:#333;
+    text-transform: none;
+    border:.1rem solid rgba(0,0,0,.1);
+    border-radius: .5rem;
+    margin:.7rem 0;
+    width: 100%;
+}
+
+.contact .row form .box:focus{
+    border-color: var(--pink);
+}
+
+.contact .row form textarea{
+    height: 15rem;
+    resize: none;
+}
+
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+/*CONTACTANOS*/
+
+footer {
+    text-align: center;
+    height: 80%;
+    padding: 3px;
+    background-color: rgb(73, 73, 72);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}

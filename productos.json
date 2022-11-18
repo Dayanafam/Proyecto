@@ -1,0 +1,126 @@
+{
+    "status": "success",
+    "items": [{
+            "id": 1,
+            "title": "Home Style",
+            "price": 101,
+            "image": "img/articulo1.jpeg",
+            "category": "Art 001"
+        },
+        {
+            "id": 2,
+            "title": "Home Style",
+            "price": 104,
+            "image": "img/articulo2.jpeg",
+            "category": "Art 002"
+        },
+        {
+            "id": 3,
+            "title": "Home Style",
+            "price": 75,
+            "image": "img/articulo3.jpeg",
+            "category": "Art 003"
+        },
+        {
+            "id": 4,
+            "title": "Home Style",
+            "price": 99,
+            "image": "img/articulo4.jpeg",
+            "category": "Art 004"
+        },
+        {
+            "id": 5,
+            "title": "Home Style",
+            "price": 105,
+            "image": "img/articulo5.jpeg",
+            "category": "House"
+
+        },
+        {
+            "id": 6,
+            "title": "Home Style",
+            "price": 85,
+            "image": "img/articulo6.jpeg",
+            "category": "House"
+
+        },
+        {
+            "id": 7,
+            "title": "Home Style",
+            "price": 60,
+            "image": "img/articulo7.jpeg",
+            "category": "Art 007"
+        },
+        {
+            "id": 8,
+            "title": "Home Style",
+            "price": 35,
+            "image": "img/articulo8.jpeg",
+            "category": "Art 008"
+        },
+        {
+            "id": 9,
+            "title": "Home Style",
+            "price": 799,
+            "image": "img/articulo9.jpeg",
+            "category": "House"
+        },
+        {
+            "id": 10,
+            "title": "Home Style",
+            "price": 101,
+            "image": "img/articulo10.jpeg",
+            "category": "House"
+        },
+        {
+            "id": 11,
+            "title": "Home Style",
+            "price": 650,
+            "image": "img/articulo11.jpeg",
+            "category": "House"
+        },
+        {
+            "id": 12,
+            "title": "Home Style",
+            "price": 65,
+            "image": "img/articulo12.jpeg",
+            "category": "House"
+        },
+        {
+            "id": 13,
+            "title": "Home Style",
+            "price": 101,
+            "image": "img/articulo13.jpeg",
+            "category": "House"
+        },
+        {
+            "id": 14,
+            "title": "Home Style",
+            "price": 104,
+            "image": "img/articulo14.jpeg",
+            "category": "House"
+        },
+        {
+            "id": 15,
+            "title": "Home Style",
+            "price": 75,
+            "image": "img/articulo15.jpeg",
+            "category": "House"
+        },
+        {
+            "id": 16,
+            "title": "Home Style",
+            "price": 99,
+            "image": "img/articulo16.jpeg",
+            "category": "House"
+        },
+        {
+            "id": 17,
+            "title": "Home Style",
+            "price": 105,
+            "image": "img/articulo17.jpeg",
+            "category": "House"
+
+        }
+    ]
+}
